@@ -4,6 +4,17 @@
 ## [ discontinued ]
 This repo is not likely to get any more commitments.
 
+# docker
+how to build and run the docker image
+```bash
+docker build -t level1up .
+```
+
+then execute and mount the db folder
+```bash
+docker run --rm -it -p 1234:1234 -v path-to-db:/db level1up
+```
+
 ## Leve1Up
 **A Graphical User Interface for NoSQL ( CouchDB, LevelDB ) database management**
 
