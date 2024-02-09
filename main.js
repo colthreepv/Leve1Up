@@ -148,7 +148,7 @@ if( typeof REQUEST_URL_PATH_TO_TURN_SERVER_SIDE_OFF === 'string' &&  REQUEST_URL
 
 const httpServer = http.createServer({}, EXPRESS_APP);
 
-httpServer.listen( HTTP_SERVER_PORT, HTTP_SERVER_HOST, () => {
+httpServer.listen( HTTP_SERVER_PORT, '0.0.0.0', () => {
 	console.log(CC.C, `Leve1Up's up and running: http://${HTTP_SERVER_HOST}:${HTTP_SERVER_PORT}`, CC.Reset);
 	if ( DEBUG ){ // if debug or no-ssl (probably local server) prints the interface we're running on
 		let os = require('os');
